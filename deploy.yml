@@ -8,8 +8,8 @@
       path: /home/pr8/deployment
       state: directory
       mode: '0755'
-  - name: Copy the artifact to the deployment directory
+  - name:Copy the artifact to the deployment directory
     ansible.builtin.copy:
-      src:mnt/C:\Users\student\.jenkins\workspace\prog8\target\pr8-1.0-SNAPSHOT.jar
+      src:C:\Users\student\.jenkins\workspace\prog8\target\pr8-1.0-SNAPSHOT.jar
       dest:/home/pr8/deployment/HelloMaven.jar
       remote_src:yes
